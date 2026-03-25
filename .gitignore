@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+venv/
+.env
+
+# GE
+great_expectations/uncommitted/
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Reports
+reports/*.html
+
+# Data
+*.db
+
+# Mac
+.DS_Store
