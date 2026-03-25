@@ -159,7 +159,7 @@ def step_cust_null_pass(context):
 @then('the customer duplicate check should pass')
 def step_cust_dupe_pass(context):
     assert context.result["passed"], \
-        f"Expected customer duplicate check to pass: {context.result['details']}")
+        f"Expected customer duplicate check to pass: {context.result['details']}"
     print(f"PASSED: {context.result['details']}")
 
 @then('the credit score check should fail because C005 has a score of 455')
@@ -171,7 +171,7 @@ def step_credit_score_fail(context):
 @then('the account type check should pass')
 def step_account_type_pass(context):
     assert context.result["passed"], \
-        f"Expected account type check to pass: {context.result['details']}")
+        f"Expected account type check to pass: {context.result['details']}"
     print(f"PASSED: {context.result['details']}")
 
 @then('the suite should identify all customer data quality issues')
