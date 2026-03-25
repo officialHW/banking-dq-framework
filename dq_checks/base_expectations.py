@@ -71,3 +71,4 @@ def assert_check(result:dict) -> None:
             f"FAILED: {result['check']} - {result['details']}"
         )
     print(f"PASSED: {result['check']} - {result['details']}")
+    
