@@ -52,7 +52,7 @@ def run_transaction_suite(df=None, customers_df=None):
     # 7. Status must be from accepted values
     results.append(check_accepted_values(
         df, "status",
-        ["COMPLETED", "PENDIONG", "FAILED", "CANCELLED"]
+        ["COMPLETED", "PENDING", "FAILED", "CANCELLED"]
     ))
 
     # 8. Currency must be GBP
@@ -60,7 +60,7 @@ def run_transaction_suite(df=None, customers_df=None):
 
     return results
 
-def run_transaction_suit_strict(df=None, customers_df=None):
+def run_transaction_suite_strict(df=None, customers_df=None):
     """
     Run all checks and alert immediatley on first failure.
     Used by Behave step definitions.
