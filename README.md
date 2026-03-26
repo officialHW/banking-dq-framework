@@ -50,7 +50,6 @@ a quality framework that only runs on clean data is not a quality framework.
 
 ## Framework Architecture
 ![Framework Architecture](docs/images/architecture_framework.png.PNG)
-```
 
 ---
 
