@@ -49,28 +49,7 @@ a quality framework that only runs on clean data is not a quality framework.
 ---
 
 ## Framework Architecture
-```
-banking_dq_framework/
-├── tests/
-│   ├── features/
-│   │   ├── transactions.feature   # BDD scenarios — plain English
-│   │   └── customers.feature      # BDD scenarios — plain English
-│   ├── steps/
-│   │   └── steps.py               # Step definitions — connects BDD to Python
-│   └── environment.py             # Behave setup and hooks
-├── dq_checks/
-│   ├── base_expectations.py       # Reusable validation functions
-│   ├── transaction_suite.py       # Full transaction quality suite
-│   └── customer_suite.py          # Full customer quality suite
-├── scripts/
-│   ├── setup_db.py                # Creates local SQLite database with test data
-│   └── run_checkpoints.py         # Runs GreatExpectations checkpoints
-├── data/                          # SQLite database (generated — not in Git)
-├── reports/                       # HTML test reports (generated — not in Git)
-├── .github/workflows/             # GitHub Actions CI/CD pipeline
-├── Dockerfile                     # Container for reproducible execution
-├── Makefile                       # One-command test runner
-└── requirements.txt               # Python dependencies
+![Framework Architecture](docs/images/architecture_framework.png.PNG)
 ```
 
 ---
@@ -159,33 +138,12 @@ requires one configuration change, everything else stays identical.
 
 ---
 
+
 ## Production Architecture (GCP)
 
-In a production GCP environment this framework would run as follows:
-```
-Customer transaction event
-        ↓
-    Pub/Sub topic
-        ↓
-  Dataflow (Apache Beam)
-  stream processing + inline validation
-        ↓
-  BigQuery raw tables
-        ↓
-  GreatExpectations checkpoint
-  validates raw data
-        ↓
-  dbt run + dbt test
-  transforms and validates models
-        ↓
-  Behave test suite
-  end-to-end BDD validation
-        ↓
-  Cloud Composer (Airflow)
-  orchestrates the full pipeline on schedule
-        ↓
-  Reports saved to Cloud Storage bucket
-  visible to the whole team
+In a production GCP environment this framework runs as follows:
+
+![Production Architecture](docs/images/Production_architecture_gcp.png.PNG)
 ```
 
 ---
