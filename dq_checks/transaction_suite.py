@@ -26,7 +26,7 @@ def run_transaction_suite(df=None, customers_df=None):
 
     # 2. Null checks on critical fields
     for column in ["transaction_id", "customer_id", "amount",
-                  "transaction_date", "trasaction_type", "status"]:
+                  "transaction_date", "transaction_type", "status"]:
         results.append(check_no_nulls(df, column))
 
     # 3. Uniqueness: transaction_id must be unique

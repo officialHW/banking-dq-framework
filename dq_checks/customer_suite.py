@@ -23,7 +23,7 @@ def run_customer_suite(df=None):
 
     # 2. null checks on crititcal fields
     for column in ["customer_id", "first_name", "last_name",
-                   "acoount_type", "date_joined"]:
+                   "account_type", "date_joined"]:
             results.append(check_no_nulls(df, column))
 
     # 3. Customer_id must be unique

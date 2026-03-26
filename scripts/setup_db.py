@@ -14,7 +14,7 @@ transactions = pd.DataFrame({
     "transaction_id": [
         "T001", "T002", "T003", "T004", "T005", "T006", "T007", "T008", "T001", "T009" # T001 is a duplicate
     ],
-    "Customer_id": [ 
+    "customer_id": [ 
         "C001", "C002", "C001", "C003", "C002", "C004", "C001", "C003", "C001", "C999" # C999 does not exist in customers table
     ],
     "amount": [

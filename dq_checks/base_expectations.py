@@ -71,3 +71,14 @@ def assert_check(result:dict) -> None:
             f"FAILED: {result['check']} - {result['details']}"
         )
     print(f"PASSED: {result['check']} - {result['details']}")
+
+def check_row_count(df: pd.DataFrame,
+                    min_rows: int, max_rows: int) -> dict:
+    """Check that row count is within expected bounds."""
+    row_count = len(df)
+    passed = min_rows <= row_count <= max_rows
+    return {
+        "check": "row_count",
+        "passed": passed,
+        "details": f"{row_count} rows found (expected between {min_rows} and {max_rows})"
+    }
