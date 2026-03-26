@@ -8,7 +8,7 @@ def before_all(context):
     """Runs once before all tests."""
     print("\n" + "="*60)
     print("BANKING DATA QUALITY FRAMEWORK")
-    print("PEC Platform - Lloyds Banking Group")
+    print("GCP Banking Data Platform")
     print("="*60)
     context.db_path = "data/banking.db"
 
