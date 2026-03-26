@@ -143,7 +143,6 @@ requires one configuration change, everything else stays identical.
 In a production GCP environment this framework runs as follows:
 
 ![Production Architecture](docs/images/Production_architecture_gcp.png.PNG)
-```
 
 ---
 
