@@ -1,6 +1,6 @@
 great-expectations==0.18.15
 behave==1.3.3
-behave-html-formatter=0.9.10
+behave-html-formatter==0.9.10
 dbt-core==1.11.7
 dbt-sqlite=1.10.0
 pandas
