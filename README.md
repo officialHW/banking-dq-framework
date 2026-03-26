@@ -50,7 +50,6 @@ a quality framework that only runs on clean data is not a quality framework.
 
 ## Framework Architecture
 ![Framework Architecture](docs/images/architecture_framework.png.PNG)
-```
 
 ---
 
@@ -87,12 +86,12 @@ behave tests/features/ -v
 ## Test Execution Screenshots
 
 ### Behave BDD test results
-![Behave Results](docs/images/Screenshot_behave_results_2026-03-26 at 01.32.02.png)
-![Behave Results](docs/images/Screenshot_customer_scenario_results_2026-03-26 at 01.32.24.png)
-![Behave Results](docs/images/Screenshot_transaction_scenario_running_2026-03-26 at 01.32.38.png)
+![Behave Results](docs/images/screenshot_behave_results.png)
+![Customer Scenarios](docs/images/screenshot_customer_results.png)
+![Transaction Scenarios](docs/images/screenshot_transaction_results.png)
 
 ### Checkpoint summary
-![Checkpoint Results](docs/images/Screenshot_checkpoints_results_2026-03-26 at 01.32.52.png)
+![Checkpoint Results](docs/images/screenshot_checkpoints.png)
 
 ### Deliberately bad data detected
 - T001 duplicate transaction ID : correctly detected
@@ -153,7 +152,6 @@ requires one configuration change, everything else stays identical.
 In a production GCP environment this framework runs as follows:
 
 ![Production Architecture](docs/images/Production_architecture_gcp.png.PNG)
-```
 
 ---
 
