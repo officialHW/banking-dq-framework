@@ -50,6 +50,7 @@ a quality framework that only runs on clean data is not a quality framework.
 
 ## Framework Architecture
 ![Framework Architecture](docs/images/architecture_framework.png.PNG)
+```
 
 ---
 
@@ -70,7 +71,7 @@ python scripts/setup_db.py
 # 4. Run the full test suite
 behave tests/features/ -v
 ```
-
+›
 > Tested on macOS. Works on Linux with identical commands.
 > Windows users: use Option 2 (Docker) for guaranteed compatibility,
 > or replace `python` with `python3` if needed.
@@ -83,6 +84,15 @@ behave tests/features/ -v
 12 scenarios passed, 0 failed, 0 skipped
 43 steps passed, 0 failed, 0 skipped
 ```
+## Test Execution Screenshots
+
+### Behave BDD test results
+![Behave Results](docs/images/Screenshot_behave_results_2026-03-26 at 01.32.02.png)
+![Behave Results](docs/images/Screenshot_customer_scenario_results_2026-03-26 at 01.32.24.png)
+![Behave Results](docs/images/Screenshot_transaction_scenario_running_2026-03-26 at 01.32.38.png)
+
+### Checkpoint summary
+![Checkpoint Results](docs/images/Screenshot_checkpoints_results_2026-03-26 at 01.32.52.png)
 
 ### Deliberately bad data detected
 - T001 duplicate transaction ID : correctly detected
@@ -143,6 +153,7 @@ requires one configuration change, everything else stays identical.
 In a production GCP environment this framework runs as follows:
 
 ![Production Architecture](docs/images/Production_architecture_gcp.png.PNG)
+```
 
 ---
 

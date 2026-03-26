@@ -79,10 +79,6 @@ def step_check_currency(context):
 
 @when('I run the full transaction quality suite')
 def step_run_full_txn_suite(context):
-    if not hasattr(context, 'transactions_df'):
-        context.transactions_df = load_table("transactions")
-    if not hasattr(context, 'customers_df'):
-        context.customers_df = load_table("customers")
     context.suite_results = run_transaction_suite(
         context.transactions_df,
         context.customers_df
