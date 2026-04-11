@@ -19,7 +19,7 @@ def check_no_nulls(df:pd.DataFrame, column: str) -> dict:
     }
 
 def check_unique(df: pd.DataFrame, column: str) -> dict:
-    """Check that a column has no duploicate values."""
+    """Check that a column has no duplicate values."""
     duplicate_count = df[column].duplicated().sum()
     passed = duplicate_count == 0
     return {
