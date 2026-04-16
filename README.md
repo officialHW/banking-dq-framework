@@ -33,7 +33,7 @@ is consumed by downstream models or customer-facing systems.
 | amount between 0.01 and 1,000,000 | Range check | FAIL — T007 has -50.00 |
 | customer_id exists in customers | Referential integrity | FAIL — C999 has no match |
 | transaction_type is DEBIT or CREDIT | Accepted values | PASS |
-| currency is GBP | Accepted values | PASS |
+| currency is GBP, EUR | Accepted values | PASS |
 
 ### Customers table
 | Check | Type | Expected Result |
