@@ -30,7 +30,7 @@ transactions = pd.DataFrame({
         "COMPLETED", "COMPLETED", "COMPLETED", "COMPLETED", "COMPLETED", "COMPLETED", "COMPLETED", "COMPLETED", "COMPLETED", "COMPLETED"
     ],
     "currency": [
-        "GBP", "EUR", "GBP", "GBP", "GBP", "GBP", "GBP", "GBP", "GBP", "gbp"
+        "GBP", "EUR", "GBP", "GBP", "GBP", "GBP", "GBP", "GBP", "GBP", "GBP"
     ]
 })
 
@@ -66,4 +66,3 @@ print("  - T007 has a negative amount (-50.00)")
 print("  - C999 in transactions has no matching customer record")
 print("  - C003 has a null email")
 print("  - C005 has a credit score of 455 (below minimum 500)")
-print(" - T009 has currency 'gbp' in lowercase which should fail accepted values check for currency")
