@@ -33,7 +33,7 @@ Feature: Transaction data quality
     When I check transaction_type for accepted values
     Then the accepted values check should pass
 
-  Scenario: Currency must be GBP
+  Scenario: Currency must be GBP or EUR
     Given the transactions table is loaded
     And the customers table is loaded
     When I check currency for accepted values

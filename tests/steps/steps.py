@@ -73,7 +73,7 @@ def step_check_txn_type(context):
 @when('I check currency for accepted values')
 def step_check_currency(context):
     context.result = check_accepted_values(
-        context.transactions_df, "currency", ["GBP"]
+        context.transactions_df, "currency", ["GBP", "EUR"]
     )
 
 

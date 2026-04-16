@@ -55,8 +55,8 @@ def run_transaction_suite(df=None, customers_df=None):
         ["COMPLETED", "PENDING", "FAILED", "CANCELLED"]
     ))
 
-    # 8. Currency must be GBP
-    results.append(check_accepted_values(df, "currency", ["GBP"]))
+    # 8. Currency must be GBP or EUR
+    results.append(check_accepted_values(df, "currency", ["GBP", "EUR"]))
 
     return results
 
